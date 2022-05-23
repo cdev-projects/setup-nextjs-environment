@@ -4,6 +4,9 @@ description: 'Initializes dependencies & caches for Next JS'
 runs:
   using: "composite"
   steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+      
     - name: Use Node.js 16
       uses: actions/setup-node@v3
       with:
